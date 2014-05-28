@@ -6,7 +6,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 
-RUN curl http://download.owncloud.org/community/owncloud-6.0.2.tar.bz2 | tar jx -C /var/www/
+RUN curl http://download.owncloud.org/community/owncloud-6.0.3.tar.bz2 | tar jx -C /var/www/
 RUN chown -R www-data:www-data /var/www/owncloud
 
 ADD ./001-owncloud.conf /etc/apache2/sites-available/
