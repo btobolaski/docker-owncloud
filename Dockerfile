@@ -20,5 +20,4 @@ RUN chown root:root /etc/rc.local
 
 VOLUME ["/var/www/owncloud/data"]
 EXPOSE 80
-EXPOSE 22
 CMD ["/sbin/my_init"]
