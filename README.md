@@ -9,7 +9,7 @@ run `docker build -t 'name/owncloud' .`
 ## Running ##
 
 1. You'll either need to build the image or pull `btobolaski/owncloud`.
-2. Run it `docker run -d -m 1g -p 127.0.0.1:9000:80 --name="owncloud" -v /var/owncloud:/var/www/owncloud/data btobolaski/owncloud`
+2. Run it `docker run -d -m 1g -p 127.0.0.1:9000:80 --name="owncloud" -v /var/owncloud/data:/var/www/owncloud/data -v /var/owncloud/config:/var/www/owncloud/config btobolaski/owncloud`
 3. Setup a reverse proxy to it
 
 ```
