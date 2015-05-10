@@ -18,6 +18,6 @@ RUN a2enmod rewrite
 ADD rc.local /etc/rc.local
 RUN chown root:root /etc/rc.local
 
-VOLUME ["/var/www/owncloud/data"]
+VOLUME ["/var/www/owncloud/data", "/var/www/owncloud/config"]
 EXPOSE 80
 CMD ["/sbin/my_init"]
