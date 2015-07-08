@@ -1,2 +1,3 @@
 #!/bin/sh
+sed -i "s/.*dbhost.*/  'dbhost' => '$MYSQL_PORT_3306_TCP_ADDR',/" /var/www/owncloud/config/config.php
 service apache2 start

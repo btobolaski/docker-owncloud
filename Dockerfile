@@ -6,7 +6,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN rm -rf /etc/service/sshd /etc/my_init.d/00_regen_ssh_host_keys.sh
 
-RUN curl -k https://download.owncloud.org/community/owncloud-8.0.3.tar.bz2 | tar jx -C /var/www/
+RUN curl -k https://download.owncloud.org/community/owncloud-8.0.4.tar.bz2 | tar jx -C /var/www/
 RUN mkdir /var/www/owncloud/data
 RUN chown -R www-data:www-data /var/www/owncloud
 
