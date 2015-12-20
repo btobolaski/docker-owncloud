@@ -1,6 +1,6 @@
 FROM phusion/baseimage:latest
 MAINTAINER Brendan Tobolaski "brendan@tobolaski.com"
-ENV OC_VERSION 8.2.0
+ENV OC_VERSION 8.2.1
 RUN apt-get -y update
 RUN apt-get install -y apache2 php5 php5-gd php-xml-parser php5-intl php5-mysqlnd php5-json php5-mcrypt smbclient curl libcurl3 php5-curl bzip2 wget
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
